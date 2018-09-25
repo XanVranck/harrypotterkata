@@ -3,7 +3,7 @@ package harrypotterkata.hogwarts;
 public class Wizard {
     private String name;
 
-    public Wizard(String name) {
+    private Wizard(String name) {
         this.name = name;
     }
 
