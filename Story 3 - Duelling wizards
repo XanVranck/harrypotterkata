@@ -1,0 +1,11 @@
+# Duelling wizards
+We have everything for a good old battle. Of course, at Hogwarts, battling happens at a duelling club.
+A duel is between 2 wizards until one of them has no hp left.
+
+Try to have some feedback during the battle as well. Show all the spells that are summoned.
+After each spell, show hp from the opponent.
+
+* Every wizard has 100hp
+* Every attacking spell has between 5 and 15 damage (you can choose freely at each spell, hardcoded)
+* Defending spells has no damage atm
+* unforgivable spells have 50 damage
