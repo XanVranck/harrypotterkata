@@ -2,14 +2,17 @@ package harrypotterkata.hogwarts;
 
 import harrypotterkata.hogwarts.house.House;
 import harrypotterkata.hogwarts.sortinghat.SortingHat;
+import harrypotterkata.hogwarts.spell.Spell;
 
 public class Wizard {
     private String name;
-    private House house;
+    private int hp;
+    private House houseOfHogwarts;
 
     private Wizard(String name) {
         this.name = name;
-        this.house = SortingHat.determineHouseForWizard(this);
+        this.hp = 100;
+        this.houseOfHogwarts = SortingHat.determineHouseForWizard(this);
     }
 
     public static Wizard createWizardlyWizard(String name) {
@@ -20,7 +23,31 @@ public class Wizard {
         return name;
     }
 
+    public int getHp() {
+        return hp;
+    }
+
     public House getHouse() {
-        return house;
+        return houseOfHogwarts;
+    }
+
+    public void fireSpellAt(Wizard opponent) {
+        Spell spell = chooseSpell();
+        opponent.defendAgainst(spell);
+    }
+
+    private void defendAgainst(Spell spell) {
+        updateHealth( Integer.max(0,  getHp() - spell.getDamage()));
+    }
+
+    private Spell chooseSpell() {
+        Spell randomSpell = Spell.getRandomSpell();
+        System.out.println(getName() + " is summoning " + randomSpell.name());
+        return randomSpell;
+    }
+
+    private void updateHealth(int newHP) {
+        this.hp = newHP;
+        System.out.println(getName() + " has " + getHp() + " HP left");
     }
 }
