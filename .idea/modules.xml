@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/harrypotterkata.iml" filepath="$PROJECT_DIR$/.idea/modules/harrypotterkata.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/harrypotterkata_main.iml" filepath="$PROJECT_DIR$/.idea/modules/harrypotterkata_main.iml" group="harrypotterkata" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/harrypotterkata_test.iml" filepath="$PROJECT_DIR$/.idea/modules/harrypotterkata_test.iml" group="harrypotterkata" />
+    </modules>
+  </component>
+</project>
