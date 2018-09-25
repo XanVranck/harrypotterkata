@@ -1,10 +1,15 @@
 package harrypotterkata.hogwarts;
 
+import harrypotterkata.hogwarts.house.House;
+import harrypotterkata.hogwarts.sortinghat.SortingHat;
+
 public class Wizard {
     private String name;
+    private House house;
 
-    public Wizard(String name) {
+    private Wizard(String name) {
         this.name = name;
+        this.house = SortingHat.determineHouseForWizard(this);
     }
 
     public static Wizard createWizardlyWizard(String name) {
@@ -13,5 +18,9 @@ public class Wizard {
 
     public String getName() {
         return name;
+    }
+
+    public House getHouse() {
+        return house;
     }
 }
