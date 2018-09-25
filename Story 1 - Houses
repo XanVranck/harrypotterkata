@@ -1,0 +1,27 @@
+# Houses
+As you know (or should know!), every wizard at hogwarts gets assigned to a house.
+As a first year wizard at Hogwarts, the sorting hat will decide in which house you'll belong.
+
+The houses are as follows:
+* Gryffindor
+* Slytherin
+* Hufflepuff
+* Ravenclaw
+
+
+<br/>
+<br/>
+<br/>
+Implement a sorting hat that will randomly sort wizards in a house when creating a wizardly wizard.
+Try to have some feedback from the sorting hat as well like this:
+<br/>
+<br/>
+Hmm, who do we have here?
+<br/>
+Ah, I see, it's nameWizard
+<br/>
+Where shall we put you...
+<br/>
+Oh, I know...
+<br/>
+OK nameWizard, I'll put you in ... SLYTHERIN!
