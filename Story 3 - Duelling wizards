@@ -7,5 +7,5 @@ After each spell, show hp from the opponent.
 
 * Every wizard has 100hp
 * Every attacking spell has between 5 and 15 damage (you can choose freely at each spell, hardcoded)
-* Defending spells has no damage atm
-* unforgivable spells have 50 damage
+* Defending spells have no damage atm
+* Unforgivable spells have 50 damage
